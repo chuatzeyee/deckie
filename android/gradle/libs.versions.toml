@@ -1,0 +1,39 @@
+[versions]
+agp = "9.3.0"
+kotlin = "2.4.10"
+composeBom = "2026.08.00"
+activityCompose = "1.13.0"
+lifecycle = "2.11.0"
+datastore = "1.2.1"
+serialization = "1.11.0"
+junit = "4.13.2"
+sshj = "0.41.2"
+# Pinned to the bcprov/bcpkix/bcutil version sshj 0.41.2 declares (its pom pins
+# bcprov-jdk18on and bcpkix-jdk18on to 1.84); a newer bcprov here duplicates
+# classes with the transitive bcutil-jdk18on sshj pulls in via bcpkix.
+bouncycastle = "1.84"
+# Debug-only, for the Task 2 device spike: ConnectBot's Compose terminal emulator.
+termlib = "0.3.14"
+kotlinxCoroutines = "1.11.0"
+
+[libraries]
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+sshj = { group = "com.hierynomus", name = "sshj", version.ref = "sshj" }
+bouncycastle = { group = "org.bouncycastle", name = "bcprov-jdk18on", version.ref = "bouncycastle" }
+termlib = { group = "org.connectbot", name = "termlib", version.ref = "termlib" }
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutines" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

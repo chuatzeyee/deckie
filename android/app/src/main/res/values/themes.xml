@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- windowBackground + dark status/navigation bars so cold start shows the app's own
+         background instead of a white/system flash before Compose draws (Task 1 follow-up). -->
+    <style name="Theme.Deck" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#031203</item>
+        <item name="android:statusBarColor">#031203</item>
+        <item name="android:navigationBarColor">#031203</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>

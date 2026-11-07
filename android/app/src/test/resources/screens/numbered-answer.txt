@@ -1,0 +1,25 @@
+[38;5;239m[48;5;237m❯ why does the sample report fail to load? the example fi…[39m 
+[49m                                                           
+  1. [1mThe sample file has a small header problem from the [0m[39m[49m 
+     [1mgenerator.[0m[39m[49m The data file in the archive matches the    
+     original sample produced by the example tool       
+     ([38;5;153mdata/sample_0001.dat[39m). Its             
+     internal index is slightly malformed, probably     
+     by the generator. Most readers fix this silently.  
+     Strict ones may say the file "was repaired", or   
+     ask to save changes when you close it.             
+     The content is intact.                             
+  2. [1mIt has no text layer[0m[39m[49m, so you can't search text   
+     in it. That's normal for this generator.          
+                                                           
+  So if someone reported this file as "broken", it's most
+  likely the repair warning. If they saw a specific     
+  error, send me the message and I'll look further.     
+                                                           
+  One thing to note in the table: the [1mlist has two [0m[39m[49m  
+  [1midentical rows[0m[38;5;231m[48;5;237m Jump to bottom (ctrl+End) ↓ [39m[49mle has only one
+  [38;5;246mnew task? [38;5;153m/clear[38;5;246m to s… ·[39m [38;5;114m✔ Update installed · Restart…[39m  
+[38;5;244m───────────────────────────────────────────────────────────
+[39m❯ [7m [0m[39m[49m           
+[38;5;244m───────────────────────────────────────────────────────────
+[39m  [38;5;211m⏵⏵ bypass permissions on[38;5;246m (shift+tab to cycle)[39m            

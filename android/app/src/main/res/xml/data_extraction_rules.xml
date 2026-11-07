@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- allowBackup="false" turns cloud backup off, but on Android 12+ it does not stop
+     device-to-device transfer. Host configuration (DataStore) and the encrypted key
+     files both live under files/; none of it may leave this phone. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="file" path="." />
+    </device-transfer>
+</data-extraction-rules>
